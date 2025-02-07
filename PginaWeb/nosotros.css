@@ -1,0 +1,54 @@
+/* Estilos generales para la sección "NOSOTROS" */
+.nosotros {
+    background-color: #f4f4f4; /* Fondo suave para la sección */
+    padding: 40px 20px; /* Espaciado interno para mayor amplitud */
+    text-align: center; /* Centrado del texto */
+  }
+  
+  .nosotros h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+    color: #333; /* Color oscuro para el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .nosotros p {
+    font-size: 1.1em; /* Tamaño de fuente cómodo para la lectura */
+    color: #555; /* Color de texto más suave */
+    line-height: 1.6; /* Espaciado entre líneas para mayor claridad */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    max-width: 800px; /* Máxima anchura del texto para evitar que se vea muy largo en pantallas grandes */
+    margin-left: auto;
+    margin-right: auto; /* Centrado del párrafo */
+  }
+  
+  .nosotros .btn-contacto {
+    background-color: #007bff; /* Botón de color azul */
+    color: white; /* Texto blanco */
+    font-size: 1.2em;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Eliminar subrayado */
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Efecto suave de transición al pasar el ratón */
+  }
+  
+  .nosotros .btn-contacto:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón */
+  }
+  
+  @media (max-width: 768px) {
+    .nosotros h2 {
+      font-size: 2em; /* Tamaño del título ajustado en pantallas pequeñas */
+    }
+  
+    .nosotros p {
+      font-size: 1em; /* Tamaño de texto más pequeño en pantallas pequeñas */
+    }
+  
+    .nosotros .btn-contacto {
+      font-size: 1em; /* Tamaño de fuente del botón más pequeño */
+      padding: 8px 16px; /* Ajuste del tamaño del botón */
+    }
+  }
+  
