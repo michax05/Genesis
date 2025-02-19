@@ -1,0 +1,107 @@
+/* Estilo general de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo y configuración de la página */
+body {
+   background-image: url(https://img.freepik.com/vetores-premium/fundo-abstrato-com-textura-de-placa-de-circuito-de-tecnologia_41981-43.jpg?w=740);
+    background-size: cover;
+   background: linear-gradient(
+    rgba(16, 22, 53, 0.637)
+    rgb(146, 36, 248)
+   ); 
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+/* Contenedor principal */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Caja de login */
+.login-box {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo del formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fafafa;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+    background-color: #e6f0ff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Enlaces en el pie de página */
+.login-footer {
+    margin-top: 20px;
+}
+
+.login-footer p {
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

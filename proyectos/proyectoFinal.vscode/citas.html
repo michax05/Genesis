@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas OGTIC</title>
+    <link rel="stylesheet" href="citas.css">
+</head>
+<body>
+    <div class="gov-banner">Esta es una web oficial del Gobierno de la República Dominicana</div>
+    <header>
+        <div class="logo">
+            <img src="file:///C:/Users/Grupo4/Downloads/logo-ogtic.png" alt="Logo OGTIC">
+        </div>
+        <h1>Reservas de Citas - OGTIC</h1>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Seleccione el tipo de cita</h2>
+            <div class="service-options">
+                <button class="service-btn" data-service="puntos-gob">Puntos Gob</button>
+                <button class="service-btn" data-service="contacto-gubernamental">Centro de Contacto Gubernamental</button>
+                <button class="service-btn" data-service="portal-servicios">Portal de Servicios del Gobierno</button>
+            </div>
+        </section>
+        <section class="appointment">
+            <h2>Agendar Cita</h2>
+            <form id="appointment-form">
+                <label for="full-name">Nombres y Apellidos:</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Ingresa tu nombre completo">
+
+                <label for="identification">Cédula o Pasaporte:</label>
+                <input type="text" id="identification" name="identification" required placeholder="Ingresa tu cédula o pasaporte">
+
+                <label for="selected-date">Fecha de cita:</label>
+                <input type="date" id="selected-date" name="selected-date" required>
+
+                <label for="selected-time">Horario seleccionado:</label>
+                <select id="selected-time" name="selected-time" required>
+                    <option value="">Seleccione un horario</option>
+                    <option value="08:00 AM">08:00 AM</option>
+                    <option value="08:30 AM">08:30 AM</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="09:30 AM">09:30 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="10:30 AM">10:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="01:30 PM">01:30 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="03:30 PM">03:30 PM</option>
+                </select>
+
+                <button type="submit">Confirmar Cita</button>
+            </form>
+        </section>
+    </main>
+    <script src="citas.js"></script>
+</body>
+</html>

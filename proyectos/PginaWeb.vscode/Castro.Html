@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CastroCell</title>
+    <link rel="stylesheet" href="./castro.css">
+</head>
+<body> 
+    <header>
+        <img src="img.ico" alt="logo" class="logo">
+    <div>
+        <a href="Castro.Html">Inicio</a> 
+        <a href="IniciarSeccion.html">Mi cuenta</a>
+    </div>
+</header>
+      
+<main>
+    <h2>Castro Cell</h2>
+
+    <div class="buttons-container">
+        <button class="btn" id="comprarBtn">Comprar un celular</button>
+        <button class="btn" id="reparacionBtn">Servicio de reparación</button>
+    </div>
+</main>
+
+
+    <button class="cart-button" id="floatingCartButton">
+        📳
+    </button>
+    
+    
+    <footer>
+        <a href="politicasdePrivacidad.html">Políticas de privacidad</a>
+        <a href="nosotros.html">Nosotros</a>
+    </footer>
+    
+    <script>
+        const floatingCartButton = document.getElementById('floatingCartButton');
+        let isDragging = false;
+        let offsetX = 0;
+        let offsetY = 0;
+    
+        floatingCartButton.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - floatingCartButton.getBoundingClientRect().left;
+            offsetY = e.clientY - floatingCartButton.getBoundingClientRect().top;
+        });
+    
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                floatingCartButton.style.left = `${e.clientX - offsetX}px`; 
+                floatingCartButton.style.top = `${e.clientY - offsetY}px`;  
+
+                floatingCartButton.style.position = 'fixed';
+            }
+        });
+    
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    
+        function openWhatsAppChat() {
+            const phoneNumber = "18292977224"; // Número de WhatsApp
+            const message = "¡Hola, quiero saber más!"; // Mensaje inicial 
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    
+        floatingCartButton.addEventListener('click', openWhatsAppChat);
+
+        document.getElementById('comprarBtn').addEventListener('click', function() {
+    window.location.href = 'comprarunCelular.html'; // Cambia esto a la URL de la página de compras
+});
+
+document.getElementById('reparacionBtn').addEventListener('click', function() {
+    window.location.href = 'pagina_de_reparacion.html'; // Cambia esto a la URL de la página de reparación
+});
+
+
+    </script>
+        
+    </body>
+    </html>    

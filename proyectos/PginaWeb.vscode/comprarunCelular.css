@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0; 
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+#cartItems li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+#totalPrice {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.remove {
+    background-color: #8b33ff;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+button.remove:hover {
+    background-color: #4e2fd9;
+}

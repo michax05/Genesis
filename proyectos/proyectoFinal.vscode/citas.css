@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.gov-banner {
+    background-color: #4caac9;
+    color: hwb(0 100% 0%);
+    text-align: center;
+    padding: 10px; 
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #ffffff;
+    padding: 15px;
+    color: #4caac9;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+main {
+    padding: 20px;
+}
+
+.services, .appointment {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4caac9;
+}
+
+.service-options {
+    display: flex;
+    gap: 10px;
+}
+
+.service-btn {
+    background: #4caac9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-btn:hover {
+    background: #001f5b;
+}
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #008000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #006400;
+}
